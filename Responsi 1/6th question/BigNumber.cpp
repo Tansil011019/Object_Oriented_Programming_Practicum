@@ -93,7 +93,6 @@ BigNumber BigNumber::operator+(const BigNumber& other) {
   int remainder = 0;
   for (int i = 0; i < BigNumber::getMaxDigit(); i++) {
     // implementasikan disini
-    
     int plus_result = this->digit[i] + other.digit[i] + remainder;
     if(plus_result > 9){
         c[i] = plus_result % 10;
